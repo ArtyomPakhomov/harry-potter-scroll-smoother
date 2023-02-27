@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harry Potter. Scroll smoother</title>
+
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <script src="./libs/gsap.min.js" defer></script>
+    <script src="./libs/ScrollSmoother.min.js" defer></script>
+    <script src="./libs/ScrollTrigger.min.js" defer></script>
+    <script src="./js/app.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="content">
+        <header class="hero-section">
+          <div class="container">
+            <h1 data-speed=".9" class="hero-section__title">Гарри Поттер</h1>
+            <img
+              data-speed=".6"
+              class="hero-section__img-bg"
+              src="./img/hogwarts.jpg"
+              alt="Хогвартс"
+            />
+          </div>
+        </header>
+        <main>
+          <div class="container">
+            <section class="main-section">
+              <div class="main-section__content left">
+                <div class="main-section__img">
+                  <img src="./img/harry-potter.jpg" alt="" />
+                </div>
+                <div class="main-section__descr">
+                  <h2>Гарри Джеймс Поттер</h2>
+                  <p>
+                    Гарри Джеймс Поттер (англ. Harry James Potter) — главный
+                    герой Поттерианы, одноклассник и лучший друг Рона Уизли и
+                    Гермионы Грейнджер, член Золотого Трио. Самый знаменитый
+                    студент Хогвартса за последние сто лет. Первый волшебник,
+                    которому удалось противостоять смертельному проклятью «Авада
+                    Кедавра», благодаря чему он стал знаменитым и получил
+                    прозвище «Мальчик, Который Выжил».
+                  </p>
+                </div>
+              </div>
+              <div class="main-section__content reversed right">
+                <div class="main-section__img">
+                  <img src="./img/hermione.jpg" alt="" />
+                </div>
+                <div class="main-section__descr">
+                  <h2>Гермиона Грейнджер</h2>
+                  <p>
+                    Гермиона Джин Грейнджер (англ. Hermione Jean Granger) — одна
+                    из главных героинь Поттерианы, подруга и однокурсница Гарри
+                    Поттера и Рона Уизли, член Золотого Трио. Единственная дочь
+                    мистера Грейнджера и его жены. Играет важную роль во всех
+                    событиях, которые происходят в жизни Гарри.
+                  </p>
+                </div>
+              </div>
+              <div class="main-section__content left">
+                <div class="main-section__img">
+                  <img src="./img/ron.jpg" alt="" />
+                </div>
+                <div class="main-section__descr">
+                  <h2>Рон Уизли</h2>
+                  <p>
+                    Рональд Билиус «Рон» Уизли (англ. Ronald Bilius «Ron»
+                    Weasley) — один из главных персонажей Поттерианы, друг и
+                    одноклассник Гарри Поттера и Гермионы Грейнджер, член
+                    Золотого Трио. Младший сын в семье Уизли.
+                  </p>
+                </div>
+              </div>
+              <div class="main-section__content reversed right">
+                <div class="main-section__img">
+                  <img src="./img/malfoy.jpg" alt="" />
+                </div>
+                <div class="main-section__descr">
+                  <h2>Драко Малфой</h2>
+                  <p>
+                    Драко Люциус Малфой (англ. Draco Lucius Malfoy) —
+                    чистокровный волшебник, студент Хогвартса, ровесник Гарри
+                    Поттера. По многим причинам мальчики ещё на первом курсе
+                    стали заклятыми врагами. Учился на факультете Слизерин, как
+                    и многие его родственники до него. Будучи сыном Пожирателя
+                    смерти Люциуса Малфоя, Драко полностью перенял его
+                    воинственное отношение к маглам, став приверженцем
+                    чистокровной доктрины. Он довольно умён, активен,
+                    амбициозен.
+                  </p>
+                </div>
+              </div>
+              <div class="main-section__content left">
+                <div class="main-section__img">
+                  <img src="./img/dark-lord.jpg" alt="" />
+                </div>
+                <div class="main-section__descr">
+                  <h2>Том Реддл</h2>
+                  <p>
+                    Том Марволо Реддл (англ. Tom Marvolo Riddle) — главный
+                    антагонист в серии романов о Гарри Поттере; тёмный
+                    волшебник, обладающий огромной магической силой и
+                    практически достигший бессмертия при помощи чёрной магии, а
+                    точнее — с помощью Крестражей. В волшебном мире больше
+                    известен как Лорд Волан-де-Морт (англ. Lord Voldemort).
+                  </p>
+                </div>
+              </div>
+              <div class="main-section__content reversed right">
+                <div class="main-section__img">
+                  <img src="./img/severus-snape.jpg" alt="" />
+                </div>
+                <div class="main-section__descr">
+                  <h2>Северус Снегг</h2>
+                  <p>
+                    Северус Снегг (англ. Severus Snape) — самый противоречивый
+                    персонаж саги. Преподаватель зельеварения (1981—1996) и
+                    защиты от Тёмных искусств (1996—1997), декан факультета
+                    Слизерин в 1981—1997, а позже директор Школы Чародейства и
+                    Волшебства Хогвартс в 1997—1998.
+                  </p>
+                </div>
+              </div>
+              <div class="main-section__content left">
+                <div class="main-section__img">
+                  <img src="./img/minerva.jpg" alt="" />
+                </div>
+                <div class="main-section__descr">
+                  <h2>Минерва Макгонагалл</h2>
+                  <p>
+                    Минерва Макгонагалл (англ. Minerva McGonagall) — заместитель
+                    директора Школы Чародейства и Волшебства «Хогвартс», декан
+                    Гриффиндора, преподаватель трансфигурации, впоследствии
+                    директор Хогвартса.
+                  </p>
+                </div>
+              </div>
+              <div class="main-section__content reversed right">
+                <div class="main-section__img">
+                  <img src="./img/bellatrix-lestrange.jpg" alt="" />
+                </div>
+                <div class="main-section__descr">
+                  <h2>Беллатриса Лестрейндж</h2>
+                  <p>
+                    Беллатриса Лестрейндж (урожд. Блэк) (англ. Bellatrix
+                    Lestrange (née Black)) — чистокровная волшебница, Пожиратель
+                    смерти, самая рьяная приспешница Волан-де-Морта.
+                    Профессионал в боевой магии, сравнимая с самим Тёмным
+                    Лордом, Антонином Долоховым и Северусом Снеггом. Склонна к
+                    безумию, очень жестока и коварна, великолепный тактик и
+                    стратег.
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
